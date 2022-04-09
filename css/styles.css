@@ -8,6 +8,7 @@
     --theme-contacts: rgba(255, 255, 255, 0.6);
     --theme-header-border: #ECECEC;
     --theme-portfolio-border: #EEEEEE;
+    --theme-bg-bt-hover: #188CE8;
 }
 
 body {
@@ -153,6 +154,10 @@ address {
     letter-spacing: 0.06em;
     color: var(--theme-accent);
     background-color: var(--theme-hover);
+}
+
+.call-btn:hover {
+    background-color: var(--theme-bg-bt-hover);
 }
 
 /* features */
