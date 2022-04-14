@@ -7,8 +7,10 @@
     --theme-bg-btn: #F5F4FA;
     --theme-contacts: rgba(255, 255, 255, 0.6);
     --theme-header-border: #ECECEC;
+    --theme-clients-border: #AFB1B8;
     --theme-portfolio-border: #EEEEEE;
     --theme-bg-bt-hover: #188CE8;
+    --theme-bg-team: #FFFFFF;
 }
 
 body {
@@ -42,6 +44,8 @@ address {
 
 .img {
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 .container {
@@ -55,7 +59,20 @@ address {
     padding-bottom: 94px;
 }
 
-/* header */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* ---------------------header--------------------- */
 .header {
     display: flex;
     align-items: center;
@@ -122,12 +139,16 @@ address {
     opacity: 1;
 }
 
-/* call */
+/* ---------------------call--------------------- */
 .call {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
     background-color: #2F303A;
+    background-image: url(../images/bgImg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: contain; */
 }
 
 .call-title {
@@ -160,23 +181,10 @@ address {
     background-color: var(--theme-bg-bt-hover);
 }
 
-/* features */
+/* ---------------------features--------------------- */
 .features {
     padding-bottom: 0;
 }
-
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-  }
 
 .features-list {
     display: flex;
@@ -203,14 +211,15 @@ address {
     line-height: 1.71;
 }
 
-/* occupation */
+/* ---------------------occupation--------------------- */
 .occupation-list {
     display: flex;
     gap: 30px;
 }
 
 .occupation-header, 
-.team-header {
+.team-header,
+.clients-header {
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -220,7 +229,11 @@ address {
     color: var(--theme-heading);
 }
 
-/* team */
+.occupation-item {
+    width: 370px;
+}
+
+/* ---------------------team--------------------- */
 .team {
     background-color: var(--theme-bg-btn);
 }
@@ -228,6 +241,13 @@ address {
 .team-list {
     display: flex;
     gap: 30px;
+}
+
+.team-item {
+    width: 270px;
+    background-color: var(--theme-bg-team);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-description {
@@ -252,7 +272,24 @@ address {
     text-align: center;
 }
 
-/* footer */
+/* ---------------------clients--------------------- */
+
+.clients-list {
+    display: flex;
+}
+
+.clients-item {
+    width: 170px;
+    padding: 16px 32px;
+    border: 1px solid var(--theme-clients-border);
+    border-radius: 4px;
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* ---------------------footer--------------------- */
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -297,7 +334,7 @@ address {
     opacity: 1;
 }
 
-/* portfolio */
+/* ---------------------portfolio--------------------- */
 
 .portfolio-buttons {
     display: flex;
@@ -329,6 +366,10 @@ address {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.portfolio-item {
+    width: 370px;
 }
 
 .portfolio-specification {
