@@ -11,6 +11,8 @@
     --theme-portfolio-border: #EEEEEE;
     --theme-bg-bt-hover: #188CE8;
     --theme-bg-team: #FFFFFF;
+    --theme-clients: #AFB1B8;
+    --theme-icons: #AFB1B8;
 }
 
 body {
@@ -278,8 +280,9 @@ address {
 }
 
 .team-description {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    padding: 30px 32px;
 }
 
 .team-name {
@@ -293,10 +296,46 @@ address {
 }
 
 .team-position {
+    margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+}
+
+.team-socials {
+    display: flex;
+    justify-content: center;
+}
+
+.team-socials-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--theme-icons);
+}
+
+.team-socials-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-socials-link {
+    display: inline-flex;
+}
+
+.team-socials-item:hover {
+    background-color: var(--theme-hover);
+    color: var(--theme-accent);
+    fill: var(--theme-accent);
+}
+
+.team-socials-icons {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
 
 /* ---------------------clients--------------------- */
