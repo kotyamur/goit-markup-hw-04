@@ -312,12 +312,6 @@ address {
 
 .team-socials-item {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    color: var(--theme-icons);
 }
 
 .team-socials-item:not(:last-child) {
@@ -326,13 +320,18 @@ address {
 
 .team-socials-link {
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--theme-icons);
 }
 
-.team-socials-item:hover,
-.team-socials-item:focus {
+.team-socials-link:hover,
+.team-socials-link:focus {
     background-color: var(--theme-hover);
     color: var(--theme-accent);
-    fill: var(--theme-accent);
 }
 
 .team-socials-icons {
@@ -349,29 +348,27 @@ address {
 
 .clients-item {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    /* padding: 16px 32px; */
-    border: 1px solid var(--theme-clients-border);
-    border-radius: 4px;
-    color: var(--theme-clients);
 }
 
 .clients-item:not(:last-child) {
     margin-right: 30px;
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-socials-link:hover,
+.clients-socials-link:focus {
     border-color: var(--theme-hover);
     color: var(--theme-hover);
-    fill: var(--theme-hover);
 }
 
 .clients-socials-link {
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--theme-clients-border);
+    border-radius: 4px;
+    color: var(--theme-clients);
 }
 
 .clients-icon {
@@ -449,13 +446,6 @@ address {
 
 .footer-socials-item {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    color: var(--theme-footer-icons);
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-socials-item:not(:last-child) {
@@ -464,6 +454,13 @@ address {
 
 .footer-socials-link {
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--theme-footer-icons);
+    background-color: rgba(255, 255, 255, 0.1)
 }
 
 .footer-socials-icons {
@@ -472,8 +469,8 @@ address {
     fill: var(--theme-accent);
 }
 
-.footer-socials-item:hover,
-.footer-socials-item:focus {
+.footer-socials-link:hover,
+.footer-socials-link:focus {
     background-color: var(--theme-hover);
 }
 
